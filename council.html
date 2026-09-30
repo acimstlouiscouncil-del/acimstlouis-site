@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Council — ACIM St. Louis</title>
+  <meta name="description" content="Meet the ACIM St. Louis Council — mission, vision, and current members.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .bio-card {
+      background:#fff;
+      border:1px solid var(--rule);
+      border-radius:8px;
+      padding:1.75rem;
+      display:flex;
+      flex-direction:column;
+      gap:0.75rem;
+    }
+    .bio-header {
+      display:flex;
+      gap:1rem;
+      align-items:flex-start;
+    }
+    .bio-photo {
+      width:80px;
+      height:80px;
+      border-radius:50%;
+      object-fit:cover;
+      object-position:top center;
+      flex-shrink:0;
+      border:3px solid var(--lavender);
+    }
+    .bio-name {
+      font-family:var(--font-head);
+      font-size:1.3rem;
+      font-weight:700;
+      color:var(--midnight);
+      line-height:1.2;
+    }
+    .bio-text {
+      font-size:0.92rem;
+      color:var(--muted);
+      line-height:1.7;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container">
+    <a class="nav-brand" href="index.html">ACIM <span>St. Louis</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="meetings.html">Meetings</a></li>
+      <li><a href="picnic.html">Picnic</a></li>
+      <li><a href="retreat.html">Retreat</a></li>
+      <li><a href="inspiration.html">Inspiration</a></li>
+      <li><a href="history.html">History</a></li>
+      <li><a href="council.html" class="active">Council</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero with banner -->
+<section style="position:relative; overflow:hidden; min-height:200px; display:flex; align-items:center; padding:0;">
+  <img src="banner.jpg" alt="ACIM St. Louis" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center top;">
+  <div style="position:absolute; inset:0; background:rgba(28,52,54,0.78);"></div>
+  <div style="position:absolute; inset:0; opacity:0.12;" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><defs><pattern id="linen" x="0" y="0" width="8" height="8" patternUnits="userSpaceOnUse"><line x1="0" y1="0" x2="8" y2="0" stroke="white" stroke-width="0.7" opacity="0.8"/><line x1="0" y1="4" x2="8" y2="4" stroke="white" stroke-width="0.4" opacity="0.4"/><line x1="0" y1="0" x2="0" y2="8" stroke="white" stroke-width="0.7" opacity="0.8"/><line x1="4" y1="0" x2="4" y2="8" stroke="white" stroke-width="0.4" opacity="0.4"/></pattern></defs><rect width="100%" height="100%" fill="url(#linen)"/></svg></div>
+  <div style="position:relative; z-index:1; width:100%; padding: clamp(2.5rem,6vw,4rem) var(--gutter);">
+    <div style="max-width:var(--max-w); margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:2rem;">
+    <div class="hero-inner" style="flex:1; min-width:0;">
+      <p class="hero-eyebrow">Incorporated in Missouri · Est. 2005</p>
+      <h1 style="font-size:clamp(1.5rem,3vw,2.4rem);">The ACIM<br>St. Louis Council</h1>
+      <p class="hero-sub" style="margin-bottom:0;">A nonprofit organization dedicated to supporting and connecting A Course in Miracles students throughout the greater St. Louis region.</p>
+    </div>
+    <div style="flex-shrink:0; width:clamp(70px,10vw,140px); opacity:1;">
+      <img src="lotus.png" alt="" aria-hidden="true" style="width:100%; height:auto; display:block; filter:brightness(1.6) drop-shadow(0 2px 10px rgba(255,255,255,0.25));">
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- Mission and vision -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="two-col" style="gap:clamp(2rem,6vw,5rem); align-items:center;">
+      <div>
+        <h2 class="section-heading">Our Mission</h2>
+        <div class="section-rule"></div>
+        <p style="font-size:1.05rem; line-height:1.8; color:var(--body-text); margin-bottom:1.75rem;">To promote education, interaction, and sharing among local ACIM study groups and students — both current and future — by connecting them through communications, resources, and events.</p>
+        <h2 class="section-heading">Our Vision</h2>
+        <div class="section-rule"></div>
+        <p style="font-size:1.05rem; line-height:1.8; color:var(--body-text);">To develop greater love and compassion within our region by starting with ourselves.</p>
+      </div>
+      <div>
+        <!-- Council bio sheet as a real image -->
+        <img src="council-bios.jpg" alt="ACIM St. Louis Council members Al Whitehead, Debra Disney, John Mills, and Nancy Light" style="width:100%; border-radius:8px; box-shadow:0 4px 24px rgba(0,0,0,0.12);">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Individual bio cards -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-heading">Current Council Members</h2>
+    <div class="section-rule"></div>
+    <p class="section-lead">The Council is composed of St. Louis-area ACIM students who volunteer their time to serve the community. There are currently 300+ ACIM students in the region.</p>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(320px,1fr)); gap:1.5rem; margin-top:0.5rem;">
+
+      <div class="bio-card">
+        <div class="bio-header">
+          <img src="al.jpg" alt="Al Whitehead" class="bio-photo" style="object-position:50% 30%;">
+          <div>
+            <div class="bio-name">Alwyn (Al) Whitehead</div>
+            <div style="font-size:0.82rem; color:var(--gold); font-weight:600; margin-top:0.2rem;">Clinical Psychologist · Council Member since 2022</div>
+          </div>
+        </div>
+        <p class="bio-text">Al Whitehead works as a clinical psychologist. He has been an A Course in Miracles student since 1980, studying the Text, doing the lessons, and leading groups. He recently completed leading a Text Study Group and Workbook Practice Group.</p>
+      </div>
+
+      <div class="bio-card">
+        <div class="bio-header">
+          <img src="nancy.jpg" alt="Nancy Light" class="bio-photo" style="object-position:50% 30%;">
+          <div>
+            <div class="bio-name">Nancy Light</div>
+            <div style="font-size:0.82rem; color:var(--gold); font-weight:600; margin-top:0.2rem;">Council Member since 2013 (rejoined 2022)</div>
+          </div>
+        </div>
+        <p class="bio-text">Nancy has been a student of the Course since 1990. She was a facilitator for Attitudinal Healing in the early 90's and has led and attended multiple ACIM study groups. Nancy was on the council from 2013 to 2019 and joined again in 2022. She continues to be amazed by all the gifts the Course has for us all.</p>
+      </div>
+
+      <div class="bio-card">
+        <div class="bio-header">
+          <img src="john.jpg" alt="John Mills" class="bio-photo" style="object-position:50% 25%;">
+          <div>
+            <div class="bio-name">John Mills</div>
+            <div style="font-size:0.82rem; color:var(--gold); font-weight:600; margin-top:0.2rem;">Council Member since 2014</div>
+          </div>
+        </div>
+        <p class="bio-text">John Mills has been a dedicated student of the Course for 20+ years. He melds his financial expertise with a passion for continuous learning. Since joining the ACIM St. Louis Council in 2014, John has managed its finances while being a partner manager at Global Payments. Teachers Gary Renard and Regina Dawn Akers inspire him.</p>
+      </div>
+
+      <div class="bio-card">
+        <div class="bio-header">
+          <img src="erica.jpg" alt="Erica Crady" class="bio-photo" style="object-position:50% 25%;">
+          <div>
+            <div class="bio-name">Erica Crady</div>
+            <div style="font-size:0.82rem; color:var(--gold); font-weight:600; margin-top:0.2rem;">Council Member</div>
+          </div>
+        </div>
+        <p class="bio-text">For no discernible reason, Erica was a very serious religious kid from the start, and in 2007 at age 19 she was made aware of the Course through <em>Esoteric Christianity</em> by Richard Smoley; confounded by the dense blue books, she was led to a key to unlock its mysteries for her, Gary Renard's <em>Disappearance of the Universe</em>, and has been an ACIM student as her primary spiritual practice since. Erica is a cat lady, an artist, and a teacher. She also enjoys tarot cards and talking about dreams.</p>
+      </div>
+
+      <div class="bio-card">
+        <div class="bio-header">
+          <img src="debra.jpg" alt="Debra Disney" class="bio-photo" style="object-position:50% 25%;">
+          <div>
+            <div class="bio-name">Debra Disney</div>
+            <div style="font-size:0.82rem; color:var(--gold); font-weight:600; margin-top:0.2rem;">Council Member since 2024</div>
+          </div>
+        </div>
+        <p class="bio-text">Debra, a Course student since 2012, is inspired by the teachings of Jon Mundy and Robert Perry. She is a Licensed Clinical Professional Counselor at the University of Illinois College of Medicine in Peoria, IL. Debra and her husband married in 1988 when living in St. Louis, and they return to St. Louis often. She joined the council in 2024.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Connect -->
+<section class="section section-dark">
+  <div class="container" style="max-width:680px; text-align:center;">
+    <h2 class="section-heading" style="color:#fff;">Get Involved</h2>
+    <div class="section-rule" style="margin:0 auto 1.5rem;"></div>
+    <p style="color:rgba(255,255,255,0.75); line-height:1.75; font-size:1.05rem; margin-bottom:2rem;">The Council welcomes suggestions, volunteers, and anyone who wants to contribute to the St. Louis ACIM community. Reach out — we'd love to hear from you.</p>
+    <a href="contact.html" class="btn btn-gold">Contact the Council</a>
+    <a href="https://www.facebook.com/search/top?q=acim%20saint%20louis" target="_blank" rel="noopener" class="btn btn-outline" style="margin-left:0.75rem;">Find us on Facebook</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">ACIM <span>St. Louis</span></div>
+      <p class="footer-tagline">Supporting A Course in Miracles students throughout the greater St. Louis region since 1975.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Pages</h4>
+      <ul>
+        <li><a href="meetings.html">Meetings</a></li>
+        <li><a href="picnic.html">2026 Picnic</a></li>
+        <li><a href="retreat.html">2027 Retreat</a></li>
+        <li><a href="inspiration.html">Inspiration</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="council.html">Council</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:info@acimstlouis.org">info@acimstlouis.org</a></li>
+        <li><a href="https://www.facebook.com/search/top?q=acim%20saint%20louis" target="_blank" rel="noopener">Facebook Community</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 ACIM St. Louis Council. All rights reserved.</span>
+    <span>A nonprofit organization incorporated in Missouri.</span>
+  </div>
+</footer>
+
+</body>
+</html>
